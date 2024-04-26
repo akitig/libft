@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+         #
+#    By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 08:44:44 by akunimot          #+#    #+#              #
-#    Updated: 2024/04/16 09:10:02 by akunimot         ###   ########.fr        #
+#    Updated: 2024/04/23 13:39:33 by akunimot         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,16 +57,16 @@ BONUS_SRC =    ft_lstadd_back.c \
             ft_lstsize.c \
             ft_lstdelone.c
             
-## SRCS += $(BONUS_SRC)
-CC               	 = cc
-RM              	  = rm -f
-CFLAGS          	  = -Wall -Wextra -Werror
+SRCS                += $(BONUS_SRC)
+CC                  = cc
+RM                  = rm -f
+CFLAGS              = -Wall -Wextra -Werror
 
 NAME            	= libft.a
 
 OBJS            = $(SRCS:.c=.o)
 BONUS_OBJS      = $(BONUS_SRC:.c=.o)
-## OBJS += $(BONUS_OBJS)
+OBJS            += $(BONUS_OBJS)
 
 $(NAME):        $(OBJS)
 				ar rcs $@ $^

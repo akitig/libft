@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 08:34:07 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 09:03:53 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:49:27 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t i;
+	size_t	i;
 
 	if (!s || !f)
 		return ;

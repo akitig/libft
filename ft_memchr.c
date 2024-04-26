@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 06:12:10 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 08:51:14 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:47:06 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t i;
-	unsigned char *s_cp;
+	size_t			i;
+	unsigned char	*s_cp;
 
 	s_cp = (unsigned char *)s;
 	i = 0;

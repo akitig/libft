@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 07:33:11 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 09:03:24 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:50:41 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ int	ft_with_c(char c, const char *str)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;
-	size_t start;
-	size_t end;
-	char *ans;
+	size_t	i;
+	size_t	start;
+	size_t	end;
+	char	*ans;
 
 	if (!s1 || !set)
 		return (NULL);

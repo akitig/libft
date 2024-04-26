@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 05:33:17 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 05:33:19 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:49:52 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (dstsize > 0)

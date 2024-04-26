@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 08:37:44 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 08:58:24 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:48:45 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	size_t len;
+	size_t	len;
 
 	if (!s)
 		return ;

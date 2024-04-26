@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: mkunimot <hatopopo142@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 05:27:22 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/18 04:59:53 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 12:56:02 by mkunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (d);
 }
 
+/*
 #include <stdio.h>
 
 void	check_memcpy(void *dst, void *src, size_t size)
@@ -45,3 +46,5 @@ void	check_memcpy(void *dst, void *src, size_t size)
 	if (expected)
 		free(expected);
 }
+
+*/

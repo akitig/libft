@@ -1,35 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 08:54:06 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/23 13:49:21 by akunimot         ###   ########.fr       */
+/*   Created: 2024/04/23 13:42:41 by akunimot          #+#    #+#             */
+/*   Updated: 2024/04/23 13:46:48 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+t_list	*ft_lstnew(void *content)
 {
-	int		src_i;
-	int		dest_i;
-	char	*dest;
+	t_list	*ans;
 
-	src_i = 0;
-	dest_i = 0;
-	while (s1[src_i] != '\0')
-		src_i++;
-	dest = (char *)malloc(sizeof(char) * (src_i + 1));
-	if (dest == NULL)
+	ans = (t_list *)malloc(sizeof(t_list));
+	if (ans == NULL)
 		return (NULL);
-	while (s1[dest_i] != '\0')
-	{
-		dest[dest_i] = s1[dest_i];
-		dest_i++;
-	}
-	dest[dest_i] = '\0';
-	return (dest);
+	ans->content = content;
+	ans->next = NULL;
+	return (ans);
 }
+
+/*
+#include <string.h>
+#include <stdio.h>
+int main()
+{
+	puts("----ft_lstnew------");
+	char	test11[] = "12345";
+//	char	test21[] = "abcde";
+//	char	test31[] = "123\n";
+
+	t_list	*ans = ft_lstnew(test11);
+	
+	while ()
+	{
+		t_list	*p;
+		p = ans.next;
+		printf("%s",ans.next);
+
+}
+*/

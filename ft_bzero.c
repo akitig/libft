@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 05:27:25 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 05:27:26 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:44:49 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	char *str;
+	size_t		i;
+	char		*str;
 
 	str = s;
 	if (n == 0)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 08:18:58 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/16 08:27:23 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/23 13:45:46 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ void	ft_put(long n, char *str, int *i)
 
 char	*ft_itoa(int n)
 {
-	long num;
-	char *ans;
-	int i;
+	long	num;
+	char	*ans;
+	int		i;
 
 	num = n;
 	ans = malloc(sizeof(char) * ft_longlen(num) + 1);

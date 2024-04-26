@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
+/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 05:55:16 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/23 14:37:27 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/26 21:50:03 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,24 +30,30 @@ char	*ft_strrchr(const char *s, int c)
 	return (ans);
 }
 
+/*
 #include "stdio.h"
+
    #include <sys/mman.h>
 
 void	*electric_alloc(size_t size)
 {
-	long	page_size = sysconf(_SC_PAGESIZE);
-	void	*ptr = mmap(NULL, page_size * 2, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
+	long	page_size;
+	void	*ptr;
 
+	page_size = sysconf(_SC_PAGESIZE);
+	ptr = mmap(NULL, page_size * 2, PROT_READ | PROT_WRITE,
+			MAP_ANON | MAP_PRIVATE, -1, 0);
 	memset(ptr, 'Z', page_size * 2);
 	mprotect(ptr + page_size, page_size, PROT_NONE);
 	return (ptr + page_size - size);
 }
 
-/*
-int main(void)
+int	main(void)
 {
+	char	*str1;
+
 	// your strrchr crash because it read too many bytes or attempt to write on s !
-        char *str1 = malloc(INT_MAX-100);   char *str2 = malloc(INT_MAX-100);
+        str1 = malloc(INT_MAX-100);   char *str2 = malloc(INT_MAX-100);
 		memset(str1, 'a', INT_MAX-110);
 		memset(str2, 'a', INT_MAX-110);
 		printf("%s\n", ft_strrchr(str1, 'z'));

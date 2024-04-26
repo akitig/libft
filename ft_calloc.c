@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: akunimot <akitig24@gmail.com>              +#+  +:+       +#+        */
+/*   By: akunimot <akunimot@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 06:27:35 by akunimot          #+#    #+#             */
-/*   Updated: 2024/04/23 13:45:21 by akunimot         ###   ########.fr       */
+/*   Updated: 2024/04/27 01:33:30 by akunimot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*mem;
+	unsigned char	*ptr;
 
-	if (count == 0 || size == 0)
-		return (ft_calloc(1, 1));
-	mem = malloc(count * size);
-	if (mem == NULL)
+	if (size > 0 && (SIZE_MAX / size < count))
 	{
+		errno = ENOMEM;
 		return (NULL);
 	}
-	ft_bzero(mem, count * size);
-	return (mem);
+	size *= count;
+	ptr = malloc(size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, size);
+	return (ptr);
 }
